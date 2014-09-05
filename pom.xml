@@ -4,14 +4,14 @@
   <artifactId>forecast-client</artifactId>
   <version>0.1.0</version>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source/>
-          <target/>
+          <source>1.6</source>
+          <target>1.6</target>
         </configuration>
       </plugin>
     </plugins>
@@ -27,11 +27,6 @@
   		<artifactId>junit</artifactId>
   		<version>4.11</version>
   		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.apache.httpcomponents</groupId>
-  		<artifactId>httpclient</artifactId>
-  		<version>4.3.5</version>
   	</dependency>
   </dependencies>
 </project>
