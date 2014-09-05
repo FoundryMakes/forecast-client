@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 public class ForecastClientTest
 {
-	private static String apiKey = "2a51368bbf25fab02d9c0d41aa00b132";
+	private static String apiKey;
 
 	private static Double minneapolisLatitude;
 	private static Double minneapolisLongitude;
@@ -34,7 +34,7 @@ public class ForecastClientTest
 	 */
 	@Before
 	public void setUp() {
-		apiKey = "2a51368bbf25fab02d9c0d41aa00b132";
+		apiKey = System.getenv("FORECAST_API_KEY");
 
 		minneapolisLatitude = new Double(44.9776535);
 		minneapolisLongitude = new Double(-93.263954);
@@ -74,6 +74,9 @@ public class ForecastClientTest
 	}
 
 
+	/**
+	 * 
+	 */
 	@Test
 	public void testLatLongDate()
 	{
@@ -90,6 +93,9 @@ public class ForecastClientTest
 	}
 
 
+	/**
+	 * 
+	 */
 	@Test
 	public void testLatLongBlocks()
 	{

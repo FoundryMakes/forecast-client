@@ -41,7 +41,8 @@ public class ForecastClient
 	 */
 	public ForecastClient(String apiKey)
 	{
-		if (apiKey == null) {
+		if (apiKey == null)
+		{
 			throw new ForecastException("You must set a valid API Key.");
 		}
 
